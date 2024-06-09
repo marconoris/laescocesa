@@ -1,0 +1,403 @@
+/*Petite css pour l'evolutys blog*/
+/*Voyons voir du coté des liens*/
+a:link, a:visited{
+	color: #757575;
+	text-decoration: none;
+}
+a:hover, a:active{
+	color: #000;
+	text-decoration: overline;
+}
+/*Paramétrages des images*/
+img{
+	border: none;/*Je n'y mets aucune bordure, il n'y en a pas besoin*/
+	margin-bottom: 5px;
+	margin-right: 5px;/*Cette marge permet de mettre le texte sur la droite de l'image à bonne distance*/
+	margin-top: 5px;
+}
+.hidden{
+	display: none;
+}
+/*Centrons maintenant les images et le texte, si besoin*/
+.centerize{
+	text-align: center;
+}
+/*Le gros de la troope maintenant*/
+body{
+	color: #000;
+	font-size: 11px;
+	font-family: Trebuchet MS, "Lucida Sans Unicode", Arial, Lucida Sans, Tahoma, Sans-Serif;
+	background-color: #F8F8F8;
+	margin: 0px;
+	text-align: center;
+}
+#wrapper{
+	width: 738px;
+	margin: auto;
+	background: white url(images/fondepage.jpg) repeat-y;
+	text-align: left;
+}
+#header{
+	position: relative;
+	width: 738px;
+	height: 235px;
+	margin: auto;
+	background: url(images/entete.jpg) no-repeat;
+}
+#container{
+	width: 100%;
+	float: left;
+	margin-right: -200px;
+}
+.content{
+	margin-right: 210px;
+	margin-left: 30px;
+	padding: 25px 0;
+}
+#sidebarcontainer{
+	height: 100%;
+}
+#sidebar{
+	height: 100%;
+	width: 180px;
+	float: right;
+	padding: 25px 0;
+	margin: 0 19px 0 0;
+	text-align: left;
+	background: url(images/content_bg.gif) repeat-y left;
+}
+#footer{
+	width: 738px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	background: url(images/basdepage.jpg) top no-repeat;
+}
+#credits{
+	font-size: 10px;
+	text-align: center;
+	color: #000;
+	margin: 0px 0 10px 0;
+	background:none;
+}
+#credits a:link, #credits a:visited{
+	color: #4F4F4F;
+}
+#credits a:hover, #credits a:active{
+	color: Fuchsia;
+}
+/*.clearing{
+	height: 0;
+	clear: both;
+}*/
+#header h1{
+	position: absolute;
+	top: 18px;
+	left: 26px;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0;
+}
+#navigation{
+	font-size: 11px;
+	width: 694px;
+	height: 22px;
+	position: absolute;
+	top: 151px;
+	left: 10px;
+}
+#navigation ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#navigation li{
+	background: none;
+}
+h2{
+	color: #3E565F;
+	margin: 0 0 3px 0;
+	font-size: 16px;
+}
+h3{
+	color: #3E565F;
+	margin: 0 0 8px 0;
+	font-size: 14px;
+}
+h4{
+	font-size: 11px;
+}
+.contentdiv{
+	margin: 0 15px 0 22px;
+}
+.sidebardiv{
+	margin: 0 22px 0 15px;
+}
+.contentbody img{
+	border: 1px solid black;
+}
+.c_commentbody{
+	padding: 0 0 5px 0;
+	background: url(images/01_hdot.gif) bottom repeat-x;
+}
+.c_userlink{
+	margin: 0 0 5px 0;
+}
+.c_commentinfo{
+	font-size: 10px;
+	margin: 3px 0 0 0;
+	padding: 0 0 0 13px;
+	background: url(images/01_item1.gif) 0 1px no-repeat;
+}
+.contentbody{
+	margin: 0;
+	padding: 0 0 30px 43px;
+	text-align: justify;
+}
+.contenttitle{
+	font: 24px Arial, Helvetica, sans-serif;
+}
+.contenttitle a{
+	color: #C71585;
+}
+.sidebarbody{
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.sidebarin{
+	padding: 0;
+	margin: 0;
+}
+.sidebarin-bg1{
+	padding: 5px;
+	margin: 0 10px 0 0;
+	background: #F8F8F8 url(images/01_mountaintop2.gif) no-repeat top;
+line-height: 12px;
+}
+.divweblog .contentbody, .divarchives .contentbody, .divarchivelist .contentbody, .diverror .contentbody, .divmemberinfo .contentbody,
+.divsendmessage .contentbody, .divcommentitem .contentbody, .divsearch .contentbody{
+	background: url(images/01_quote.gif) 0 3px no-repeat;
+}
+.divcommentsmade .contentbody{
+	background: url(images/01_quote1.gif) 0 3px no-repeat;
+}
+.divcommentsmade .id1{
+	background: url(images/01_quote4.gif) 0 3px no-repeat;
+}
+.divaddcomment .contentbody{
+	background: url(images/01_quote3.gif) 0 3px no-repeat;
+}
+.itemdetails{
+	text-align: right;
+	padding: 5px 0 0 0;
+	margin: 0px 0 20px 0;
+	background: url(images/01_hdot.gif) top repeat-x;
+}
+.item1{
+	padding: 0 0 0 13px;
+	margin: 0 0 0 12px;
+	background: url(images/01_item1.gif) 0 1px no-repeat;
+}
+.item2{
+	padding: 0 0 0 13px;
+	margin: 0 0 0 12px;
+	background: url(images/01_item2.gif) 0 3px no-repeat;
+}
+.item3{
+	padding: 0 0 0 15px;
+	margin: 0 0 0 12px;
+	background: url(images/01_item3.gif) 0 3px no-repeat;
+}
+.item4{
+	padding: 0 0 0 15px;
+	margin: 0 0 0 12px;
+}
+.about h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_about.gif) no-repeat;
+}
+.login h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_login.gif) no-repeat;
+}
+.categories h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_categories.gif) no-repeat;
+}
+.search h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_search.gif) no-repeat;
+}
+.titulo h3{
+	font: 700 11px Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid black;
+}
+.links h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_links.gif) no-repeat;
+}
+.artistas h3{
+	height: 30px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_artistas.gif) no-repeat;
+}
+.news h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_news.gif) no-repeat;
+}
+.actividades h3{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 2px 0;
+	background: url(images/01_s_actividades.gif) no-repeat;
+}
+h2.weblog, h2.comments, h2.commentsmade, h2.addcomment, h2.archives, h2.error, h2.member, h2.sendmessage, h2.searchpage{
+	height: 23px;
+	text-indent: -9999px;
+	margin: 0 0 5px 0;
+}
+h2.weblog{
+	background: url(images/01_m_weblog.gif) no-repeat;
+}
+h2.comments{
+	background: url(images/01_m_comments.gif) no-repeat;
+}
+h2.commentsmade{
+	background: url(images/01_m_commentsmade.gif) no-repeat;
+}
+h2.addcomment{
+	background: url(images/01_m_addcomment.gif) no-repeat;
+}
+h2.archives{
+	background: url(images/01_m_archives.gif) no-repeat;
+}
+h2.error{
+	background: url(images/01_m_error.gif) no-repeat;
+}
+h2.member{
+	background: url(images/01_m_member.gif) no-repeat;
+}
+h2.sendmessage{
+	background: url(images/01_m_sendmessage.gif) no-repeat;
+}
+h2.searchpage{
+	background: url(images/01_m_search.gif) no-repeat;
+}
+form{
+	margin: 0;
+	text-align: left;
+}
+.formfield{
+	width: 130px;
+	font-size: 11px;
+	font-family: Trebuchet MS, "Lucida Sans Unicode", Arial, Lucida Sans, Tahoma, Sans-Serif;
+	margin: 0 0 2px 0;
+	color: #494949;
+	border-top: 1px solid #868686;
+	border-left: 1px solid #868686;
+	border-bottom: 1px solid #D4D2CF;
+	border-right: 1px solid #D4D2CF;
+}
+.formfield:focus{
+	border: 1px solid black;
+}
+.formbutton{
+	font-size: 11px;
+	font-family: Trebuchet MS, "Lucida Sans Unicode", Arial, Lucida Sans, Tahoma, Sans-Serif;
+	margin: 1px 0 0 0;
+	padding: 1px 10px;
+	color: #494949;
+	background: white;
+	border-top: 1px solid #D4D2CF;
+	border-left: 1px solid #D4D2CF;
+	border-bottom: 1px solid #868686;
+	border-right: 1px solid #868686;
+}
+textarea{
+	overflow: hidden;
+}
+.commentform .formfield, .mailform .formfield{
+	width: 340px;
+	background-image: url(images/01_txbg.gif);
+}
+.commentform textarea{
+	background: white url(images/01_txbg.gif) center center no-repeat;
+}
+.divaddcomment form, .divsendmessage form{
+	width: 390px;
+	background: #E2EDF0 url(images/01_mountaintop.gif) top no-repeat;
+}
+.commentform, .mailform{
+	padding: 10px 20px;
+}
+.login form, .search form{
+	width: 144px;
+}
+.loginform, .searchform{
+	padding: 0px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+li{
+	padding: 0 0 0 9px;
+	margin: 0 0 2px 0;
+	background: url(images/01_arrow.gif) 0 6px no-repeat;
+	line-height:13px;
+}
+.highlight{
+	font-weight: bold;
+	text-decoration: underline;
+}
+div.error{
+	color: red;
+	font-weight: bold;
+}
+dd{
+	padding: 0 0 0 9px;
+	margin: 0 0 2px 0;
+	background: url(images/01_arrow.gif) 0 6px no-repeat;
+	line-height:13px;
+}
+	
+#nav{
+	margin:30px 0 0 0;
+	padding:7px 0 0 0;
+	text-align:center;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+	
+#nav a, #nav a:visited{
+	color: #D11685;
+	text-decoration: underline;
+}
+#nav a:hover{
+	color: #999999;
+}
+#old{
+	float:left;
+	font-size:1.1em;
+	font-weight:700;
+	margin:0 20px 0 0;
+}
+#new{
+	float:left;
+	font-size:1.1em;
+	font-weight:700;
+}

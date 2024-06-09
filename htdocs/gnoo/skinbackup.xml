@@ -1,0 +1,324 @@
+
+
+<nucleusskin>
+	<meta>
+		<skin name="gnoo" />
+		<template name="gnoo/full" />
+		<template name="gnoo/short" />
+	</meta>
+
+
+	<skin name="gnoo" type="text/html" includeMode="skindir" includePrefix="gnoo/">
+		<description>Gnoo par globule</description>
+		<part name="archive"><![CDATA[<!--Archive-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Archive-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="archives">Archives</h2>
+      <div class="divarchives">
+<!--Database Generated Content-->
+<%archive(gnoo/short)%>
+<!--End Database Generated Content-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="archivelist"><![CDATA[<!--Archive List-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Archive List-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="archives">Archives</h2>
+      <div class="divarchivelist">
+        <div class="contentbody">
+<!--Database Generated Content-->
+<%archivelist(gnoo/short)%>
+<!--End Database Generated Content-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="error"><![CDATA[<!--Errors-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Errors-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="error">Error</h2>
+      <div class="diverror">
+        <div class="contentbody">
+        <%errormessage%>
+        <br /><br /><a href="javascript:history.go(-1);">Go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="imagepopup"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title><%imagetext%></title>
+  <style type="text/css">
+   img { border: none; }
+   body { margin: 0px; }
+  </style>
+</head>
+<body onblur="window.close()">
+  <a href="javascript:window.close();"><%image%></a>
+</body>
+</html>]]></part>
+
+		<part name="index"><![CDATA[<!--Main Index-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Main Index-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="weblog">Weblog</h2>
+      <div class="divweblog">
+<!--Database Generated Content-->
+<%blog(gnoo/short,10)%>
+<!--End Database Generated Content-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="item"><![CDATA[<!--Item Pages-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Item Pages-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="comments">Comments</h2>
+      <div class="divcommentitem">
+<!--Database Generated Content-->
+<%item(gnoo/full)%>
+<!--End Database Generated Content-->
+      </div>
+    <a name="c"></a>
+    <h2 class="commentsmade">Comments made</h2>
+      <div class="divcommentsmade">
+<!--Database Generated Content-->
+<%comments(gnoo/full)%>
+<!--End Database Generated Content-->
+      </div>
+    <h2 class="addcomment">Add comment</h2>
+      <div class="divaddcomment">
+        <div class="contentbody">
+<%commentform%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="member"><![CDATA[<!--Member details-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Member Details-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="member">Member info</h2>
+      <div class="divmemberinfo">
+        <div class="contentbody">
+        Name: <%member(realname)%>
+        <br />Website: <a href="<%member(url)%>"><%member(url)%></a>
+        <br /><br />
+        </div>
+      </div>
+    <h2 class="sendmessage">Send message</h2>
+      <div class="divsendmessage">
+        <div class="contentbody">
+        <%membermailform%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+		<part name="search"><![CDATA[<!--Search-->
+<!--head.inc-->
+<%parsedinclude(head.inc)%>
+<!--header.inc-->
+<%parsedinclude(header.inc)%>
+<!--Start Search-->
+<div id="container">
+  <div id="content">
+    <div class="contentdiv">
+    <h2 class="searchpage">Search</h2>
+      <div class="divsearch">
+<!--Database Generated Content-->
+<%searchresults(gnoo/short)%>
+<!--End Database Generated Content-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--sidebar.inc-->
+<%parsedinclude(sidebar.inc)%>
+<!--footer.inc-->
+<%parsedinclude(footer.inc)%>]]></part>
+
+	</skin>
+
+
+	<template name="gnoo/full">
+		<description>Used for detailed item pages</description>
+		<part name="COMMENTS_BODY"><![CDATA[          <div class="contentbody id<%memberid%>">
+          <h4 class="c_userlink"><%userlink%> a écrit :</h4>
+            <div class="c_commentbody">
+            <%body%>
+            </div>
+            <div class="c_commentinfo">
+            <%date%> <%time%>
+            </div>
+          </div>]]></part>
+
+		<part name="COMMENTS_MANY"><![CDATA[ commentaires ]]></part>
+
+		<part name="COMMENTS_NONE"><![CDATA[<div class="contentbody">Aucun commentaire posté</div>]]></part>
+
+		<part name="COMMENTS_ONE"><![CDATA[ commentaire]]></part>
+
+		<part name="EDITLINK"><![CDATA[- <a href="<%editlink%>" onclick="<%editpopupcode%>" title="Editer">edit</a>]]></part>
+
+		<part name="FORMAT_DATE"><![CDATA[%d/%m]]></part>
+
+		<part name="FORMAT_TIME"><![CDATA[%X]]></part>
+
+		<part name="IMAGE_CODE"><![CDATA[<%image%>]]></part>
+
+		<part name="ITEM"><![CDATA[        <div class="contentbody">
+        <h3><%date%>: <%title%></h3>
+<%body%>
+        <a name="more"></a>
+        <br /><br />
+<%more%>
+        </div>]]></part>
+
+		<part name="LOCALE"><![CDATA[en]]></part>
+
+		<part name="MEDIA_CODE"><![CDATA[<%media%>]]></part>
+
+		<part name="POPUP_CODE"><![CDATA[<%popuplink%>]]></part>
+
+		<part name="SEARCH_HIGHLIGHT"><![CDATA[<span class="highlight">\0</span>]]></part>
+
+	</template>
+
+
+	<template name="gnoo/short">
+		<description>The default template that is used to display your Nucleus blog</description>
+		<part name="ARCHIVELIST_FOOTER"><![CDATA[</ul>]]></part>
+
+		<part name="ARCHIVELIST_HEADER"><![CDATA[<ul>]]></part>
+
+		<part name="ARCHIVELIST_LISTITEM"><![CDATA[<li><a href="<%archivelink%>" title="Les archives de %B, %Y">%B, %Y</a></li>]]></part>
+
+		<part name="CATLIST_FOOTER"><![CDATA[</ul>
+]]></part>
+
+		<part name="CATLIST_HEADER"><![CDATA[<ul class="nobullets"><li><a href="<%blogurl%>" title="Voir toutes les sections">Retour accueil</a></li>
+]]></part>
+
+		<part name="CATLIST_LISTITEM"><![CDATA[<li><a href="<%catlink%>" title="Section : <%catname%>"><%catname%></a></li>
+]]></part>
+
+		<part name="COMMENTS_MANY"><![CDATA[ commentaires]]></part>
+
+		<part name="COMMENTS_NONE"><![CDATA[<span class="item3"><a href="<%itemlink%>#c" rel="bookmark" title="Ecrire un commentaire sur <%itemtitle%>">Pas de commentaire</a></span>]]></part>
+
+		<part name="COMMENTS_ONE"><![CDATA[ commentaire seulement ?!]]></part>
+
+		<part name="COMMENTS_TOOMUCH"><![CDATA[<span class="item3"><a href="<%itemlink%>#c" rel="bookmark" title="<%commentcount%> <%commentword%>"><%commentcount%> <%commentword%></a></span>]]></part>
+
+		<part name="EDITLINK"><![CDATA[<a href="<%editlink%>" onclick="<%editpopupcode%>" title="Editer <%itemtitle%>">editer</a> -]]></part>
+
+		<part name="FORMAT_DATE"><![CDATA[%d/%m]]></part>
+
+		<part name="FORMAT_TIME"><![CDATA[%X]]></part>
+
+		<part name="IMAGE_CODE"><![CDATA[<%image%>]]></part>
+
+		<part name="ITEM"><![CDATA[<!--Item Body-->
+        <div class="contentbody">
+        <h3><%date%>: <a href="?itemid=<%itemid%>" title="Read entry: <%title%>"><%title%></a></h3>
+<%body%>
+<%morelink%>
+        <br /><br />
+        <div class="itemdetails">
+          <span class="item1"><a href="<%authorlink%>" title="Auteur : <%author%>"><%author%></a></span>&nbsp;
+          <span class="item2"><a href="<%categorylink%>" title="Section : <%Category%>"><%Category%></a></span>&nbsp;
+          <%comments%>
+        </div>
+        </div>]]></part>
+
+		<part name="LOCALE"><![CDATA[en]]></part>
+
+		<part name="MEDIA_CODE"><![CDATA[<%media%>]]></part>
+
+		<part name="MORELINK"><![CDATA[<br /><br /><a href="<%itemlink%>#more" title="En savoir plus <%title%>">En savoir plus ...</a>]]></part>
+
+		<part name="POPUP_CODE"><![CDATA[<%popuplink%>]]></part>
+
+		<part name="SEARCH_HIGHLIGHT"><![CDATA[<span class="highlight">\0</span>]]></part>
+
+		<part name="SEARCH_NOTHINGFOUND"><![CDATA[        <div class="contentbody">
+        Aucun résultat pour <b><%query%></b>.
+        </div>]]></part>
+
+	</template>
+
+
+</nucleusskin>
